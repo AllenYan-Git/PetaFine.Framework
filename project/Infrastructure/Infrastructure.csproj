@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF92EA7C-F79F-41A6-9FC3-7E806D7A0392}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Infrastructure</RootNamespace>
+    <AssemblyName>Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\Lib\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Enyim.Caching, Version=2.16.0.0, Culture=neutral, PublicKeyToken=cec98615db04012e, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnyimMemcached.2.16.0\lib\net35\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Gma.QrCodeNet.Encoding.Net35">
+      <HintPath>..\Lib\Gma.QrCodeNet.Encoding.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\Lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="LumiSoft.Net">
+      <HintPath>..\Lib\LumiSoft.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\Lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\Lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\Lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenPop">
+      <HintPath>..\Lib\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="pop3">
+      <HintPath>..\Lib\pop3.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCompress">
+      <HintPath>..\Lib\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APIUtils.cs" />
+    <Compile Include="AppSettingsHelper.cs" />
+    <Compile Include="AssemblyHelper.cs" />
+    <Compile Include="BarCodeHelper.cs" />
+    <Compile Include="CacheContent\CacheContext.cs" />
+    <Compile Include="CacheContent\CacheProvider.cs" />
+    <Compile Include="CacheContent\EnyimMemcachedContext.cs" />
+    <Compile Include="CacheContent\ICacheContext.cs" />
+    <Compile Include="CacheContent\ObjCacheProvider.cs" />
+    <Compile Include="CacheHelper.cs" />
+    <Compile Include="Collection.cs" />
+    <Compile Include="CommonHelper.cs" />
+    <Compile Include="CompressionHelper.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="ContentTypeHelper.cs" />
+    <Compile Include="ConverterHelper.cs" />
+    <Compile Include="CookieHelper.cs" />
+    <Compile Include="Diff.cs" />
+    <Compile Include="Encrypt.cs" />
+    <Compile Include="EncryptHelper.cs" />
+    <Compile Include="EnglishCharConverter.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="Exception.cs" />
+    <Compile Include="Fetch.cs" />
+    <Compile Include="FileWatchHelper.cs" />
+    <Compile Include="GeoHelper.cs" />
+    <Compile Include="HttpHelper.cs" />
+    <Compile Include="IDCardHelper.cs" />
+    <Compile Include="IISHelper.cs" />
+    <Compile Include="IISUtil.cs" />
+    <Compile Include="IISWorker.cs" />
+    <Compile Include="ImageUtil.cs" />
+    <Compile Include="JsonConverter.cs" />
+    <Compile Include="JsonHelper.cs" />
+    <Compile Include="JsUtil.cs" />
+    <Compile Include="MailHelper\FactoryPop3.cs" />
+    <Compile Include="MailHelper\LumiSoftPop3.cs" />
+    <Compile Include="MailHelper\OpenPopPop3.cs" />
+    <Compile Include="MailHelper\Pop3.cs" />
+    <Compile Include="MailHelper\ReceiveAccessory.cs" />
+    <Compile Include="MailHelper\SendMail.cs" />
+    <Compile Include="MimeMapping.cs" />
+    <Compile Include="NetHelper.cs" />
+    <Compile Include="NpoiHelper.cs" />
+    <Compile Include="PageHelper.cs" />
+    <Compile Include="PermutationAndCombination.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProvinceHelper.cs" />
+    <Compile Include="QRCodeHelper.cs" />
+    <Compile Include="RarHelper.cs" />
+    <Compile Include="RegExp.cs" />
+    <Compile Include="Response.cs" />
+    <Compile Include="SerializationHelper.cs" />
+    <Compile Include="SerializeHelper.cs" />
+    <Compile Include="SessionHelper.cs" />
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="StringUtil.cs" />
+    <Compile Include="ValidationHelper.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="ZipHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
